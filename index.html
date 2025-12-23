@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="UTF-8">
+ <title>START PAGE</title>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+ 
+ 
+ <style>
+        body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Georgia', serif;
+        color: #0a1d2c;
+        background-color: #fefcf7;
+    }
+
+    #logo {
+        display: block;
+        margin: 20px auto 10px auto;
+        width: 150px;
+        height: auto;
+    }
+
+    table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        border-radius: 8px;
+        overflow: hidden;
+        font-weight: normal; 
+    }
+
+    table td {
+        padding: 15px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    #services td, #team td, .contact-box {
+        background-color: #f7f1e5;
+        color: #205781;
+    }
+
+    #services td {
+        display: flex;
+        position: relative;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;                 
+        padding: 15px;
+}
+
+#services td::before{
+    content: "•";
+    color:  #205781;        
+    font-size: 22px;
+    line-height: 1;
+}
+
+    .team-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 3px solid #a47e3b;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        background-color: #205781;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+    }
+
+    a {
+        color: #a47e3b;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+html { scroll-behavior: smooth; }
+
+ h1 {
+ color: #205781;
+ text-align: center;
+ margin-top: 10px;
+ }
+
+ h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: #205781;
+  margin: 60px 0 30px 0;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+h3{
+ font-family: 'Playfair Display', serif;
+ font-size: 20px;
+  color: #205781;
+  margin: 60px 0 30px 0;
+  text-align: center;
+  letter-spacing: 1px;
+
+}
+ 
+ p {
+ color: #205781;
+ text-align: center;
+ font-size: 17px;
+ }
+
+ html { scroll-behavior: smooth; }
+
+ .hero {
+ min-height: 86vh;
+ background-image:
+ linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+ url('images/home1.png');
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 30px 16px;
+ }
+ 
+ .hero-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 58px;
+ font-weight: 700;
+ letter-spacing: 1px;
+ color: #ffffff;
+ margin-bottom: 22px;
+ text-transform: uppercase;
+ }
+ 
+ .hero-text {
+ font-family: 'Playfair Display', serif;
+ font-style: italic;
+ font-size: 21px;
+ line-height: 1.8;
+ color: rgba(255,255,255,0.95);
+ max-width: 760px;
+ margin: 0 auto 30px auto;
+ }
+ 
+ .hero-btn {
+ font-family: 'Montserrat', sans-serif;
+ display: inline-block;
+ background: #205781;
+ color: #ffffff;
+ padding: 14px 30px;
+ border-radius: 10px;
+ text-decoration: none;
+ font-weight: 600;
+ letter-spacing: .3px;
+ }
+ 
+ .hero-btn:hover {
+ background: #183d65;
+ }
+ </style>
+ </head>
+ 
+ <body align="center">
+ 
+<div style="background:#205781; padding:10px; text-align:center;">
+    <a href="start.htm" style="color:white; margin:0 15px;">HOME</a>
+    <a href="#hotels" style="color:white; margin:0 15px;">HOTELS</a>
+    <a href="#about" style="color:white; margin:0 15px;">ABOUT US</a>
+    <span style="color:white;">|</span>
+    <a href="login.htm" style="color:white; margin:0 15px;">LOGIN</a>
+    <a href="register.htm" style="color:white; margin:0 15px;">REGISTER</a>
+</div>
+
+ 
+ <div class="hero">
+ <div class="hero-inner">
+ 
+ <img 
+ src="images/logostartpage.png"
+ alt="Hotel Guide Istanbul Logo"
+ class="hero-logo"
+ />
+ 
+ <div class="hero-text">
+ Hello, thank you for visiting us! With the HotelGuide Istanbul guarantee,
+ you can easily book the following hotels in Istanbul’s five tourist districts,
+ carefully selected for you.
+ </div>
+ 
+ <a class="hero-btn" href="reservation.htm">Make a Reservation</a>
+ 
+
+</div>
+</div>
+
+<h2 class="hotels-title" id="hotels">HOTELS</h2>
+
+<table border="0" width="100%" cellspacing="20">
+ <tr>
+ <td align="center">
+ <img src="images/aspera-hotel-altunizade-ana-bina.jpg" width="250" height="250"><br>
+ <h3>Aspera Hotel Altunizade</h3>
+ <a href="altunizade.htm"><button style="background: #205781; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">SHOW DETAILS</button></a>
+ </td>
+ 
+ <td align="center">
+ <img src="images/caption.jpg" width="250" height="250"><br>
+ <h3>Hotel Avantgarde Urban Levent</h3>
+ <a href="levent.htm"><button style="background: #205781; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">SHOW DETAILS</button></a>
+ </td>
+ 
+ <td align="center">
+ <img src="images/kalamis1.png" width="250" height="250"><br>
+ <h3>Wyndham Grand Marina Kalamış</h3>
+ <a href="kalamis.htm"><button style="background: #205781; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">SHOW DETAILS</button></a>
+ </td>
+ </tr>
+ 
+ <tr>
+ <td align="center">
+ <img src="images/images.png" width="250" height="250"><br>
+ <h3>Port Bosphorus Hotel Karak&ouml;y</h3>
+ <a href="karakoy.htm"><button style="background: #205781; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">SHOW DETAILS</button></a>
+ </td>
+ 
+ <td align="center">
+ <img src="images/fatih1.webp" width="250" height="250"><br>
+ <h3>Legacy Ottoman Hotel Fatih</h3>
+ <a href="fatih.htm"><button style="background: #205781; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">SHOW DETAILS</button></a>
+ </td>
+ <td></td>
+ </tr>
+ </table>
+ 
+</div>
+<img src="images\logobackground.png" 
+    style="position:fixed; 
+           top:0; 
+           left:0; 
+           width:100%; 
+           height:100%; 
+           z-index:-1; 
+           object-fit:cover;" 
+    alt="background">
+
+
+
+<h1 class="hotels-title" id="about">ABOUT US</h1>
+
+<p style="text-align: center;">
+&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp HotelGuide was founded in 2025 as a group project for the <em>MIS327 Full Stack Development 
+</em> course, 
+with the vision of simplifying hotel search and booking experiences in Istanbul. The founders 
+noticed that most booking platforms were complicated and cluttered. Our goal is to allow users 
+to find hotels clearly without unnecessary steps. We have partnered with several popular hotels, 
+providing up-to-date information on availability, pricing, and reviews. We continuously improve 
+the user interface so even first-time users can easily make reservations. We aim to further expand our 
+services to nearby attractions, maps, and to more hotels in Istanbul and other cities of Turkiye.
+</p>
+
+<h3>Our Services</h3>
+<table border="0" id="services">
+<tr><td class="bullet">Listing hotels in Istanbul with quick access</td></tr>
+<tr><td class="bullet">Quick reservation via a simple booking form</td></tr>
+<tr><td class="bullet">User-friendly interface and hotel guide information</td></tr>
+<tr><td class="bullet">Customer support and communication channels</td></tr>
+</table>
+
+
+
+<h3>Location & Contact</h3>
+<p class="contact-box" style="padding:15px; border-radius:8px;">
+Address: Cibali Mah. Kadir Has Cad. 34083
+Fatih-İstanbul <br>
+Phone: +90 555 123 45 67 <br>
+Email: 
+<a href="mailto:aleynapekmezcan@stu.khas.edu.tr">aleynapekmezcan@stu.khas.edu.tr, </a> 
+<a href="mailto:ervaokur@stu.khas.edu.tr">ervaokur@stu.khas.edu.tr, </a> 
+<a href="mailto:enesyucel@stu.khas.edu.tr,">enesyucel@stu.khas.edu.tr, </a> 
+<a href="mailto:aysenur.tosunoglu@stu.khas.edu.tr">aysenur.tosunoglu@stu.khas.edu.tr, </a>
+
+</p>
+
+
+<h3>Our Team</h3>
+<table border="0" id="team">
+<tr>
+   <td>
+       <img src="images\aleyna.jpg" class="team-img" alt="aleyna"><br>
+       Aleyna Pekmezcan Bakır
+   </td>
+   <td>
+       <img src="images\erva.png" class="team-img" alt="ervaaaa"><br>
+       Erva Şevval Okur
+   </td>
+   <td>
+       <img src="images\enes.jpg" class="team-img" alt="enes"><br>
+       Enes Yücel
+   </td>
+   <td>
+       <img src= "images\Aysenur.jpeg" class="team-img" alt="Ayşenur Tosunoğlu"><br>
+       Ayşenur Tosunoğlu
+   </td>
+</tr>
+</table>
+
+
+<footer>
+Contact Us: <a href="mailto:info@hotelguide.com">info@hotelguide.com</a>
+</footer>
+
+ </body>
+ </html>
