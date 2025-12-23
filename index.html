@@ -1,323 +1,261 @@
 <!DOCTYPE html>
- <html>
- <head>
- <meta charset="UTF-8">
- <title>START PAGE</title>
- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
- 
- 
- <style>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Çocuk İşgücü Sömürüsüne Karşı Birlikte El Ele</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
         body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Georgia', serif;
-        color: #0a1d2c;
-        background-color: #fefcf7;
-    }
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+        }
 
-    #logo {
-        display: block;
-        margin: 20px auto 10px auto;
-        width: 150px;
-        height: auto;
-    }
+        header {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
 
-    table {
-        width: 80%;
-        margin: 20px auto;
-        border-collapse: collapse;
-        border-radius: 8px;
-        overflow: hidden;
-        font-weight: normal; 
-    }
+        header h1 {
+            color: #e60000;
+            margin: 0;
+        }
 
-    table td {
-        padding: 15px;
-        text-align: center;
-        font-size: 18px;
-    }
+        nav {
+            background-color: #e60000;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
-    #services td, #team td, .contact-box {
-        background-color: #f7f1e5;
-        color: #205781;
-    }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-weight: bold;
+        }
 
-    #services td {
-        display: flex;
-        position: relative;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;                 
-        padding: 15px;
-}
+        nav a:hover {
+            background-color: #000000;
+        }
 
-#services td::before{
-    content: "•";
-    color:  #205781;        
-    font-size: 22px;
-    line-height: 1;
-}
+        section {
+            padding: 50px 10%;
+        }
 
-    .team-img {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        border: 3px solid #a47e3b;
-        margin-bottom: 10px;
-    }
+        h2 {
+            color: #e60000;
+        }
 
-    footer {
-        background-color: #205781;
-        color: white;
-        text-align: center;
-        padding: 20px 0;
-        margin-top: 40px;
-    }
+        .hero {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 10%;
+        }
 
-    a {
-        color: #a47e3b;
-        text-decoration: none;
-    }
+        .hero p {
+            font-size: 18px;
+            max-width: 900px;
+            margin: auto;
+            line-height: 1.6;
+        }
 
-    a:hover {
-        text-decoration: underline;
-    }
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #e60000;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-html { scroll-behavior: smooth; }
+        .btn:hover {
+            background-color: #000000;
+        }
 
- h1 {
- color: #205781;
- text-align: center;
- margin-top: 10px;
- }
+        .top-photo {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            margin-bottom: 30px;
+            border-bottom: 4px solid #e60000;
+        }
 
- h2{
-  font-family: 'Playfair Display', serif;
-  font-size: 42px;
-  color: #205781;
-  margin: 60px 0 30px 0;
-  text-align: center;
-  letter-spacing: 1px;
-}
+        .team-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
 
-h3{
- font-family: 'Playfair Display', serif;
- font-size: 20px;
-  color: #205781;
-  margin: 60px 0 30px 0;
-  text-align: center;
-  letter-spacing: 1px;
+        .team-member {
+            text-align: center;
+        }
 
-}
- 
- p {
- color: #205781;
- text-align: center;
- font-size: 17px;
- }
+        .team-member img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #e60000;
+        }
 
- html { scroll-behavior: smooth; }
+        .team-member p {
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: bold;
+        }
 
- .hero {
- min-height: 86vh;
- background-image:
- linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
- url('images/home1.png');
- background-size: cover;
- background-position: center;
- display: flex;
- align-items: center;
- justify-content: center;
- padding: 30px 16px;
- }
- 
- .hero-title {
- font-family: 'Playfair Display', serif;
- font-size: 58px;
- font-weight: 700;
- letter-spacing: 1px;
- color: #ffffff;
- margin-bottom: 22px;
- text-transform: uppercase;
- }
- 
- .hero-text {
- font-family: 'Playfair Display', serif;
- font-style: italic;
- font-size: 21px;
- line-height: 1.8;
- color: rgba(255,255,255,0.95);
- max-width: 760px;
- margin: 0 auto 30px auto;
- }
- 
- .hero-btn {
- font-family: 'Montserrat', sans-serif;
- display: inline-block;
- background: #205781;
- color: #ffffff;
- padding: 14px 30px;
- border-radius: 10px;
- text-decoration: none;
- font-weight: 600;
- letter-spacing: .3px;
- }
- 
- .hero-btn:hover {
- background: #183d65;
- }
- </style>
- </head>
- 
- <body align="center">
- 
-<div style="background:#205781; padding:10px; text-align:center;">
-    <a href="start.htm" style="color:white; margin:0 15px;">HOME</a>
-    <a href="#hotels" style="color:white; margin:0 15px;">HOTELS</a>
-    <a href="#about" style="color:white; margin:0 15px;">ABOUT US</a>
-    <span style="color:white;">|</span>
-    <a href="login.htm" style="color:white; margin:0 15px;">LOGIN</a>
-    <a href="register.htm" style="color:white; margin:0 15px;">REGISTER</a>
-</div>
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
 
- 
- <div class="hero">
- <div class="hero-inner">
- 
- <img 
- src="images/logostartpage.png"
- alt="Hotel Guide Istanbul Logo"
- class="hero-logo"
- />
- 
- <div class="hero-text">
- Hello, thank you for visiting us! With the HotelGuide Istanbul guarantee,
- you can easily book the following hotels in Istanbul’s five tourist districts,
- carefully selected for you.
- </div>
- 
- <a class="hero-btn" href="reservation.htm">Make a Reservation</a>
- 
+        footer img {
+            max-width: 500px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
 
-</div>
-</div>
-
-<h2 class="hotels-title" id="hotels">HOTELS</h2>
-
-<table border="0" width="100%" cellspacing="20">
- <tr>
- <td align="center">
- <img src="images/aspera-hotel-altunizade-ana-bina.jpg" width="250" height="250"><br>
- <h3>Aspera Hotel Altunizade</h3>
- <a href="altunizade.htm"><button style="background: #205781; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">SHOW DETAILS</button></a>
- </td>
- 
- <td align="center">
- <img src="images/caption.jpg" width="250" height="250"><br>
- <h3>Hotel Avantgarde Urban Levent</h3>
- <a href="levent.htm"><button style="background: #205781; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">SHOW DETAILS</button></a>
- </td>
- 
- <td align="center">
- <img src="images/kalamis1.png" width="250" height="250"><br>
- <h3>Wyndham Grand Marina Kalamış</h3>
- <a href="kalamis.htm"><button style="background: #205781; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">SHOW DETAILS</button></a>
- </td>
- </tr>
- 
- <tr>
- <td align="center">
- <img src="images/images.png" width="250" height="250"><br>
- <h3>Port Bosphorus Hotel Karak&ouml;y</h3>
- <a href="karakoy.htm"><button style="background: #205781; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">SHOW DETAILS</button></a>
- </td>
- 
- <td align="center">
- <img src="images/fatih1.webp" width="250" height="250"><br>
- <h3>Legacy Ottoman Hotel Fatih</h3>
- <a href="fatih.htm"><button style="background: #205781; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">SHOW DETAILS</button></a>
- </td>
- <td></td>
- </tr>
- </table>
- 
-</div>
-<img src="images\logobackground.png" 
-    style="position:fixed; 
-           top:0; 
-           left:0; 
-           width:100%; 
-           height:100%; 
-           z-index:-1; 
-           object-fit:cover;" 
-    alt="background">
+<body>
 
 
-
-<h1 class="hotels-title" id="about">ABOUT US</h1>
-
-<p style="text-align: center;">
-&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp HotelGuide was founded in 2025 as a group project for the <em>MIS327 Full Stack Development 
-</em> course, 
-with the vision of simplifying hotel search and booking experiences in Istanbul. The founders 
-noticed that most booking platforms were complicated and cluttered. Our goal is to allow users 
-to find hotels clearly without unnecessary steps. We have partnered with several popular hotels, 
-providing up-to-date information on availability, pricing, and reviews. We continuously improve 
-the user interface so even first-time users can easily make reservations. We aim to further expand our 
-services to nearby attractions, maps, and to more hotels in Istanbul and other cities of Turkiye.
-</p>
-
-<h3>Our Services</h3>
-<table border="0" id="services">
-<tr><td class="bullet">Listing hotels in Istanbul with quick access</td></tr>
-<tr><td class="bullet">Quick reservation via a simple booking form</td></tr>
-<tr><td class="bullet">User-friendly interface and hotel guide information</td></tr>
-<tr><td class="bullet">Customer support and communication channels</td></tr>
-</table>
-
-
-
-<h3>Location & Contact</h3>
-<p class="contact-box" style="padding:15px; border-radius:8px;">
-Address: Cibali Mah. Kadir Has Cad. 34083
-Fatih-İstanbul <br>
-Phone: +90 555 123 45 67 <br>
-Email: 
-<a href="mailto:aleynapekmezcan@stu.khas.edu.tr">aleynapekmezcan@stu.khas.edu.tr, </a> 
-<a href="mailto:ervaokur@stu.khas.edu.tr">ervaokur@stu.khas.edu.tr, </a> 
-<a href="mailto:enesyucel@stu.khas.edu.tr,">enesyucel@stu.khas.edu.tr, </a> 
-<a href="mailto:aysenur.tosunoglu@stu.khas.edu.tr">aysenur.tosunoglu@stu.khas.edu.tr, </a>
-
-</p>
-
-
-<h3>Our Team</h3>
-<table border="0" id="team">
-<tr>
-   <td>
-       <img src="images\aleyna.jpg" class="team-img" alt="aleyna"><br>
-       Aleyna Pekmezcan Bakır
-   </td>
-   <td>
-       <img src="images\erva.png" class="team-img" alt="ervaaaa"><br>
-       Erva Şevval Okur
-   </td>
-   <td>
-       <img src="images\enes.jpg" class="team-img" alt="enes"><br>
-       Enes Yücel
-   </td>
-   <td>
-       <img src= "images\Aysenur.jpeg" class="team-img" alt="Ayşenur Tosunoğlu"><br>
-       Ayşenur Tosunoğlu
-   </td>
-</tr>
-</table>
-
+<nav>
+    <a href="#biz-kimiz">Biz Kimiz</a>
+    <a href="#amacimiz">Amacımız</a>
+    <a href="#temel-problem">Temel Problem</a>
+    <a href="#faaliyetler">Faaliyetlerimiz</a>
+    <a href="#blog">Blog</a>
+    <a href="#bize-katil">Bize Katıl</a>
+</nav>
 
 <footer>
-Contact Us: <a href="mailto:info@hotelguide.com">info@hotelguide.com</a>
+    <img src="mesemıscı.jpg" alt="MESEM Çalışan Çocuklar">
+    <p>© 2025 | Çocuk İşgücü Sömürüsüne Karşı Birlikte El Ele</p>
 </footer>
+<header>
 
- </body>
- </html>
+    <h1>Çocuk İşgücü Sömürüsüne Karşı Birlikte El Ele</h1>
+</header>
+
+<div class="hero">
+    <h2>Bir çocuk çalışmak zorunda kalıyorsa, bu bir tercih değildir.</h2>
+    <p>
+        Türkiye’de çocuk işçiliği, özellikle Mesleki Eğitim Merkezleri (MESEM) kapsamında
+        yeniden görünür hale gelmiş yapısal bir sorundur. Eğitim adı altında
+        sanayi ve tekstil atölyelerinde çalışan çocuklar, çoğu zaman yaşlarına
+        uygun olmayan ağır işlerde, uzun saatler boyunca ve yetersiz iş güvenliği
+        önlemleriyle çalıştırılmaktadır. Bu durum, çocukların hem fiziksel
+        güvenliğini hem de eğitim hakkını ciddi biçimde tehdit etmektedir.
+    </p>
+</div>
+
+<section>
+    <h2>MESEM ve Çocuk İşgücü Gerçeği</h2>
+
+    <p>
+        MESEM programları teoride mesleki eğitim sağlamayı amaçlasa da,
+        uygulamada birçok çocuk için fiili bir iş gücü kaynağına dönüşmektedir.
+        Özellikle tekstil sektöründe çalışan MESEM öğrencileri;
+        kesici aletler, ağır makineler, kimyasal maddeler ve ergonomik olmayan
+        çalışma koşullarıyla karşı karşıya kalmaktadır. Bu durum,
+        çocukların iş kazalarına ve meslek hastalıklarına açık hale gelmesine neden olmaktadır.
+    </p>
+
+    <p>
+        Son 10 yıl içerisinde Türkiye’de çalışırken hayatını kaybeden
+        <strong>en az 670 çocuk işçi</strong> kayıtlara geçmiştir.
+        Uzman raporları, bu ölümlerin önemli bir bölümünün
+        denetimsiz çalışma ortamları, yetersiz iş sağlığı ve güvenliği önlemleri
+        ve MESEM benzeri uygulamalarla doğrudan ilişkili olduğunu göstermektedir.
+        Bu tablo, çocuk işçiliğinin artık istisnai değil, sistematik bir sorun
+        haline geldiğini açıkça ortaya koymaktadır.
+    </p>
+
+    <a href="#bize-katil" class="btn">Bize Katıl</a>
+</section>
+
+<section id="biz-kimiz">
+    <img src="bızkımız.jpeg" alt="Biz Kimiz" class="top-photo">
+
+    <h2>Biz Kimiz</h2>
+
+    <p>
+        Biz; MESEM’lerde ve özellikle tekstil sektöründe çalışan çocukların
+        yaşam hakkını, güvenliğini ve eğitim hakkını savunan
+        bağımsız bir sivil toplum girişimiyiz. Amacımız,
+        çocuk işçiliğini normalleştiren yapılarla mücadele etmek,
+        iş sağlığı ve güvenliği politikalarının çocuklar için
+        bağlayıcı ve denetlenebilir hale gelmesini sağlamaktır.
+    </p>
+
+    <p>
+        Sahadan toplanan veriler, akademik çalışmalar ve ulusal-uluslararası
+        raporlar doğrultusunda; pilot uygulamalar, farkındalık kampanyaları
+        ve politika önerileri geliştiriyor; bu önerileri
+        TBMM ve ilgili kamu kurumlarına sunmayı hedefliyoruz.
+    </p>
+
+    <div class="team-container">
+        <div class="team-member">
+            <img src="sude.jpg" alt="Sude Demir">
+            <p>Sude Demir</p>
+        </div>
+
+        <div class="team-member">
+            <img src="gamze.jpg" alt="Gamze Kaşıkırık">
+            <p>Gamze Kaşıkırık</p>
+        </div>
+
+        <div class="team-member">
+            <img src="aysenur.jpg" alt="Ayşenur Tosunoğlu">
+            <p>Ayşenur Tosunoğlu</p>
+        </div>
+
+        <div class="team-member">
+            <img src="beren.jpg" alt="Berensu Katırcı">
+            <p>Berensu Katırcı</p>
+        </div>
+    </div>
+</section>
+
+<section id="amacimiz">
+    <h2>Amacımız</h2>
+    <p>
+        Amacımız, MESEM kapsamında çalışan çocukların ağır ve tehlikeli işlerde
+        çalıştırılmasının önüne geçmek; tekstil sektöründe çocuklar için
+        zorunlu iş sağlığı ve güvenliği standartlarının oluşturulmasını sağlamak
+        ve bu alanda kamuoyunu, karar vericileri ve işverenleri
+        sorumluluk almaya davet etmektir.
+    </p>
+
+    <p>
+        Uzun vadede hedefimiz; çocuk işçiliğini azaltmaya yönelik
+        somut, ölçülebilir ve sürdürülebilir politika önerileri geliştirerek
+        bu önerilerin yasal ve kurumsal düzeyde karşılık bulmasını sağlamaktır.
+    </p>
+</section>
+
+<section id="faaliyetler">
+    <h2>Faaliyetlerimiz</h2>
+    <p>
+        Çalışmalarımız; sahaya dayalı pilot uygulamalar, medya ve kamu spotları,
+        veri temelli raporlama ve politika savunuculuğu olmak üzere
+        dört ana eksende yürütülmektedir. Özellikle tekstil atölyelerinde
+        yapılan risk analizleri ve MESEM uygulamalarına yönelik izleme çalışmaları
+        faaliyetlerimizin merkezinde yer almaktadır.
+    </p>
+</section>
+
+
+
+</body>
+</html>
