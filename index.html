@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Çocuk İşgücü Sömürüsüne Karşı Birlikte El Ele</title>
+    <title>Çocuk İşgücü Sömürüsüne Karşı Birlikte</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
@@ -13,43 +13,54 @@
             color: #000000;
         }
 
+        /* ===== HERO IMAGE ===== */
+        .hero-image {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            display: block;
+        }
+
         header {
-            background-color: #000000;
-            padding: 20px;
+            background-color: #4037c6;
+            padding: 25px;
             text-align: center;
         }
 
         header h1 {
-            color: #e60000;
+            color: #ffffff;
             margin: 0;
         }
 
+        /* ===== NAV ===== */
         nav {
-            background-color: #e60000;
+            background-color: #e6dfd5;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
         }
 
         nav a {
-            color: #ffffff;
+            color: #4037c6;
             text-decoration: none;
             padding: 15px 20px;
             font-weight: bold;
         }
 
         nav a:hover {
-            background-color: #000000;
+            background-color: #4037c6;
+            color: #ffffff;
         }
 
         section {
-            padding: 50px 10%;
+            padding: 60px 10%;
         }
 
         h2 {
-            color: #e60000;
+            color: #4037c6;
         }
 
+        /* ===== HERO TEXT ===== */
         .hero {
             background-color: #000000;
             color: #ffffff;
@@ -64,20 +75,7 @@
             line-height: 1.6;
         }
 
-        .btn {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 15px 30px;
-            background-color: #e60000;
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .btn:hover {
-            background-color: #000000;
-        }
-
+        /* ===== TOP PHOTO ===== */
         .top-photo {
             width: 100%;
             max-height: 400px;
@@ -86,11 +84,13 @@
             border-bottom: 4px solid #e60000;
         }
 
+        /* ===== TEAM ===== */
         .team-container {
             display: flex;
             justify-content: center;
-            gap: 30px;
-            margin-top: 30px;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
         }
 
         .team-member {
@@ -98,164 +98,190 @@
         }
 
         .team-member img {
-            width: 90px;
-            height: 90px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             object-fit: cover;
-            border: 2px solid #e60000;
+            border: 3px solid #e60000;
         }
 
         .team-member p {
-            margin-top: 8px;
-            font-size: 14px;
+            margin-top: 10px;
+            font-size: 15px;
             font-weight: bold;
         }
 
-        footer {
-            background-color: #000000;
-            color: #ffffff;
-            text-align: center;
-            padding: 40px 20px 20px;
+        /* ===== ACTIVITIES ===== */
+        .activities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
         }
 
-        footer img {
-            max-width: 500px;
-            margin-bottom: 20px;
+        .activity-card {
+            background-color: #e6dfd5;
+            border-radius: 20px;
+            overflow: hidden;
+            text-decoration: none;
+            color: #000;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+        }
+
+        .activity-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .activity-title {
+            background-color: #4037c6;
+            color: #ffffff;
+            padding: 18px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #4037c6;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 20px;
         }
     </style>
 </head>
 
 <body>
 
+    <!-- ÜST FOTO -->
+    <img src="mesemisci.jpg" alt="MESEM Çalışan Çocuklar" class="hero-image">
 
-<nav>
-    <a href="#biz-kimiz">Biz Kimiz</a>
-    <a href="#amacimiz">Amacımız</a>
-    <a href="#temel-problem">Temel Problem</a>
-    <a href="#faaliyetler">Faaliyetlerimiz</a>
-    <a href="#blog">Blog</a>
-    <a href="#bize-katil">Bize Katıl</a>
-</nav>
+    <!-- MENU -->
+    <nav>
+        <a href="#biz-kimiz">ABOUT US</a>
+        <a href="#problem">PROBLEM</a>
+        <a href="#amacimiz">OUR AIM</a>
+        <a href="#faaliyetler">OUR ACTIONS</a>
+        <a href="#bize-katil">JOIN US</a>
+    </nav>
 
-<footer>
-    <img src="mesemıscı.jpg" alt="MESEM Çalışan Çocuklar">
-    <p>© 2025 | Çocuk İşgücü Sömürüsüne Karşı Birlikte El Ele</p>
-</footer>
-<header>
+    <!-- HEADER -->
+    <header>
+        <h1>Children should be safe, not at work.</h1>
+    </header>
 
-    <h1>Çocuk İşgücü Sömürüsüne Karşı Birlikte El Ele</h1>
-</header>
+    <!-- HERO -->
+    <div class="hero">
+        <h2>We oppose the exploitation of child labor under the guise of education.</h2>
+        <p>
+            The MESEM system, where children are forced to work in heavy and dangerous jobs under the guise of education, has turned into a structural problem threatening children's right to life and right to education.
+        </p>
+    </div>
 
-<div class="hero">
-    <h2>Bir çocuk çalışmak zorunda kalıyorsa, bu bir tercih değildir.</h2>
-    <p>
-        Türkiye’de çocuk işçiliği, özellikle Mesleki Eğitim Merkezleri (MESEM) kapsamında
-        yeniden görünür hale gelmiş yapısal bir sorundur. Eğitim adı altında
-        sanayi ve tekstil atölyelerinde çalışan çocuklar, çoğu zaman yaşlarına
-        uygun olmayan ağır işlerde, uzun saatler boyunca ve yetersiz iş güvenliği
-        önlemleriyle çalıştırılmaktadır. Bu durum, çocukların hem fiziksel
-        güvenliğini hem de eğitim hakkını ciddi biçimde tehdit etmektedir.
-    </p>
-</div>
+    <!-- BİZ KİMİZ -->
+    <section id="biz-kimiz">
+        <img src="bızkımız.jpeg" alt="Biz Kimiz" class="top-photo">
 
-<section>
-    <h2>MESEM ve Çocuk İşgücü Gerçeği</h2>
+        <h2>ABOUT US</h2>
 
-    <p>
-        MESEM programları teoride mesleki eğitim sağlamayı amaçlasa da,
-        uygulamada birçok çocuk için fiili bir iş gücü kaynağına dönüşmektedir.
-        Özellikle tekstil sektöründe çalışan MESEM öğrencileri;
-        kesici aletler, ağır makineler, kimyasal maddeler ve ergonomik olmayan
-        çalışma koşullarıyla karşı karşıya kalmaktadır. Bu durum,
-        çocukların iş kazalarına ve meslek hastalıklarına açık hale gelmesine neden olmaktadır.
-    </p>
+        <p>
+            We are an independent civil society initiative committed to defending the fundamental rights of working children in Türkiye—especially those enrolled in MESEMs (Vocational Training Centers). Our work focuses on protecting children’s right to life, safety, and education by raising public awareness, monitoring violations, advocating for policy change, and amplifying the voices of children whose rights are at risk within the vocational training system.
 
-    <p>
-        Son 10 yıl içerisinde Türkiye’de çalışırken hayatını kaybeden
-        <strong>en az 670 çocuk işçi</strong> kayıtlara geçmiştir.
-        Uzman raporları, bu ölümlerin önemli bir bölümünün
-        denetimsiz çalışma ortamları, yetersiz iş sağlığı ve güvenliği önlemleri
-        ve MESEM benzeri uygulamalarla doğrudan ilişkili olduğunu göstermektedir.
-        Bu tablo, çocuk işçiliğinin artık istisnai değil, sistematik bir sorun
-        haline geldiğini açıkça ortaya koymaktadır.
-    </p>
+        </p>
 
-    <a href="#bize-katil" class="btn">Bize Katıl</a>
-</section>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="sude.jpg">
+                <p>Sude Demir</p>
+            </div>
 
-<section id="biz-kimiz">
-    <img src="bızkımız.jpeg" alt="Biz Kimiz" class="top-photo">
+            <div class="team-member">
+                <img src="gamze.jpg">
+                <p>Gamze Kaşıkırık</p>
+            </div>
 
-    <h2>Biz Kimiz</h2>
+            <div class="team-member">
+                <img src="aysenur.jpg">
+                <p>Ayşenur Tosunoğlu</p>
+            </div>
 
-    <p>
-        Biz; MESEM’lerde ve özellikle tekstil sektöründe çalışan çocukların
-        yaşam hakkını, güvenliğini ve eğitim hakkını savunan
-        bağımsız bir sivil toplum girişimiyiz. Amacımız,
-        çocuk işçiliğini normalleştiren yapılarla mücadele etmek,
-        iş sağlığı ve güvenliği politikalarının çocuklar için
-        bağlayıcı ve denetlenebilir hale gelmesini sağlamaktır.
-    </p>
-
-    <p>
-        Sahadan toplanan veriler, akademik çalışmalar ve ulusal-uluslararası
-        raporlar doğrultusunda; pilot uygulamalar, farkındalık kampanyaları
-        ve politika önerileri geliştiriyor; bu önerileri
-        TBMM ve ilgili kamu kurumlarına sunmayı hedefliyoruz.
-    </p>
-
-    <div class="team-container">
-        <div class="team-member">
-            <img src="sude.jpg" alt="Sude Demir">
-            <p>Sude Demir</p>
+            <div class="team-member">
+                <img src="beren.jpg">
+                <p>Berensu Katırcı</p>
+            </div>
         </div>
+    </section>
 
-        <div class="team-member">
-            <img src="gamze.jpg" alt="Gamze Kaşıkırık">
-            <p>Gamze Kaşıkırık</p>
-        </div>
+    <!-- PROBLEM -->
+    <section id="problem">
+        <h2>PROBLEM</h2>
+        <p>
+            Children working within the MESEM program are frequently exposed to unsafe, unhealthy, and exploitative working conditions. Many are forced to work long hours for extremely low wages while facing intense physical and psychological pressure from employers. These conditions significantly increase the risk of workplace accidents, injuries, and long-term health problems. At the same time, child labor is gradually being normalized—especially in the textile industry—where children are treated as cheap, replaceable labor rather than individuals with fundamental rights to safety, education, and a dignified childhood.
+        </p>
+     
+    </section>
 
-        <div class="team-member">
-            <img src="aysenur.jpg" alt="Ayşenur Tosunoğlu">
-            <p>Ayşenur Tosunoğlu</p>
-        </div>
+    <!-- AMACIMIZ -->
+    <section id="amacimiz">
+        <h2>OUR AIM</h2>
+        <p>
+            To make child labor visible and to develop child rights–based policy recommendations for MESEM practices by documenting rights violations, raising public awareness, and advocating for regulations that prioritize children’s safety, education, well-being, and long-term development over economic interests.
+        </p>
+    </section>
 
-        <div class="team-member">
-            <img src="beren.jpg" alt="Berensu Katırcı">
-            <p>Berensu Katırcı</p>
-        </div>
+    <!-- FAALİYETLER -->
+    <section id="faaliyetler">
+        <h2>OUR ACTIONS</h2>
+
+        <div class="activities-grid">
+
+            <a href="mesem-summit.htm" class="activity-card">
+                <img src="ccdd3b57-cc16-44ef-ba6c-2da7693d8e22.jpg">
+                <div class="activity-title">MESEM & Child Labor Summit</div>
+            </a>
+
+            <a href="#" class="activity-card">
+                <img src="Ekran görüntüsü 2025-12-24 020631.png">
+                <div class="activity-title">Oğuzhan Uğur-Mevzular Açık Mikrofon "MESEM and Child Rights" </div>
+            </a>
+
+            <a href="#" class="activity-card">
+                <img src="Ekran görüntüsü 2025-12-24 020831.png">
+                <div class="activity-title">Documentary with 140Journos</div>
+            </a>
+
+               <a href="#" class="activity-card">
+            <img src="Ekran görüntüsü 2025-12-24 021006.png">
+            <div class="activity-title">Campaign Ambassador: Zehra Güneş</div>
+        </a>
+
+        <a href="#" class="activity-card">
+            <img src="Ekran görüntüsü 2025-12-24 021511.png">
+            <div class="activity-title">Run for Child Laborers – Awareness Marathon</div>
+        </a>
+
+        <a href="#" class="activity-card">
+            <img src="Ekran görüntüsü 2025-12-24 021627.png">
+            <div class="activity-title">TBMM MESEM Pilot Implementation Proposal</div>
+        </a>
     </div>
 </section>
 
-<section id="amacimiz">
-    <h2>Amacımız</h2>
-    <p>
-        Amacımız, MESEM kapsamında çalışan çocukların ağır ve tehlikeli işlerde
-        çalıştırılmasının önüne geçmek; tekstil sektöründe çocuklar için
-        zorunlu iş sağlığı ve güvenliği standartlarının oluşturulmasını sağlamak
-        ve bu alanda kamuoyunu, karar vericileri ve işverenleri
-        sorumluluk almaya davet etmektir.
-    </p>
-
-    <p>
-        Uzun vadede hedefimiz; çocuk işçiliğini azaltmaya yönelik
-        somut, ölçülebilir ve sürdürülebilir politika önerileri geliştirerek
-        bu önerilerin yasal ve kurumsal düzeyde karşılık bulmasını sağlamaktır.
-    </p>
-</section>
-
-<section id="faaliyetler">
-    <h2>Faaliyetlerimiz</h2>
-    <p>
-        Çalışmalarımız; sahaya dayalı pilot uygulamalar, medya ve kamu spotları,
-        veri temelli raporlama ve politika savunuculuğu olmak üzere
-        dört ana eksende yürütülmektedir. Özellikle tekstil atölyelerinde
-        yapılan risk analizleri ve MESEM uygulamalarına yönelik izleme çalışmaları
-        faaliyetlerimizin merkezinde yer almaktadır.
-    </p>
-</section>
 
 
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 – Children deserve education, not exploitation.</p>
+    </footer>
 
 </body>
 </html>
